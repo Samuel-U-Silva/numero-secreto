@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <locale.h>
+#include <stdlib.h>
 
 void tabuada(int numero)
 {
@@ -17,6 +18,7 @@ int main()
     setlocale(LC_ALL, "portuguese");
     printf("Qual tabuada você deseja ver visualizar ?\n");
     scanf("%d", &numero);
+    fflush(stdin);
 
     tabuada(numero);
 }
